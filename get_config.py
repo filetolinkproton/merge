@@ -4,7 +4,7 @@ import os
 import subprocess
 from dotenv import load_dotenv
 
-CONFIG_FILE_URL = os.environ.get('CONFIG_FILE_URL')
+CONFIG_FILE_URL = os.environ.get('CONFIG_FILE_URL', "https://gist.githubusercontent.com/filetolinkproton/5213e3bb70661f027b433fa836ae6d41/raw/config.env")
 try:
     if len(CONFIG_FILE_URL) == 0:
         raise TypeError
